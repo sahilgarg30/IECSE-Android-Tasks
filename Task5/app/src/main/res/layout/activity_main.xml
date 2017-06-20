@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Number : "
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/number1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="21dp"
+        android:id="@+id/n1"
+        android:layout_below="@+id/number1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number2"
+        android:text="Second Number : "
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/n1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/n2"
+
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/number2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="16dp"
+        android:id="@+id/minus"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_alignBaseline="@+id/sum"
+        android:layout_alignBottom="@+id/sum"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="16dp"
+        android:id="@+id/divide"
+        android:layout_alignBaseline="@+id/product"
+        android:layout_alignBottom="@+id/product"
+        android:layout_alignLeft="@+id/minus"
+        android:layout_alignStart="@+id/minus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="+"
+        android:id="@+id/sum"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textSize="16dp"
+        android:id="@+id/product"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/power"
+        android:layout_alignLeft="@+id/sum"
+        android:layout_alignStart="@+id/sum" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Result"
+        android:textSize="16dp"
+        android:id="@+id/result"
+        android:gravity="center"
+        android:layout_below="@+id/divide"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="^"
+        android:textSize="16dp"
+        android:id="@+id/power"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sum"
+        android:layout_alignLeft="@+id/product"
+        android:layout_alignStart="@+id/product" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="%"
+        android:id="@+id/remainder"
+        android:layout_alignBaseline="@+id/power"
+        android:layout_alignBottom="@+id/power"
+        android:layout_alignLeft="@+id/minus"
+        android:layout_alignStart="@+id/minus" />
+</RelativeLayout>
